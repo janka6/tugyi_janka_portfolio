@@ -1,0 +1,237 @@
+
+/*--Általános--*/
+	body{
+		background-color: lightgrey;
+		font-size: 32px;
+		font-family: 'Amatic SC', cursive;
+		font-weight: 300;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	*,*::before, *::after{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+/*--Általános_end--*/
+
+
+/*--layout--*/
+	body{
+		display: grid;
+		grid-template-areas: 
+			"fejlec"
+			"kontent"
+			"lablec";
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+		
+
+	}
+
+	header{
+		grid-area: fejlec;
+		
+	}
+
+	main{
+		grid-area: kontent;
+		border-top: 3px solid #000102;
+
+	}
+/*--layout_end--*/
+
+/*--link--*/
+	a{
+		text-decoration: none;
+		color: black;
+	}
+/*--link_end--*/
+
+
+/*--azonos_header--*/
+	header{
+		line-height: 2rem;
+		padding: .75rem 1rem;
+		text-align: right;
+		font-size: .95rem;
+		font-weight: lighter;
+		background-color: #ffffff;
+		cursor: pointer;
+		user-select: none;
+		
+	}
+	
+	
+	header a.header_menu{
+		margin: 0 .5rem;
+	}
+	header a.header_menu:hover{
+		color: grey;
+		text-decoration: underline;
+	}
+	.header_bal{
+		float: left;
+		text-align: left;
+		min-width: min-content;
+	}
+	.header_jobb{
+		display: inline-block;
+		margin-top: 4rem;
+		font-size: 32px;
+		margin-left: 1rem;
+
+	}
+
+	span{
+		margin-left: 4rem;
+	}
+	
+	.header_logo{
+		height: 6rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}	
+/*--azonos_header_end--*/
+
+/*--main--*/
+	.hatter{
+		max-width: 100%;
+		height: 50rem;
+		margin-right: 4rem;
+		margin-bottom: none;
+		margin-top: none;
+		padding-right: 4rem;
+		padding-left: 4rem;
+		text-align: center;
+		width: 100%;
+		display: block;
+		z-index: 0;	
+	}
+	.nev{
+		margin-top: 1rem;
+		margin-left: 20rem;
+		margin-right: 20rem;
+		z-index: 2;
+		position: absolute;
+		top: 300px;
+		left: 250px;
+	}
+/*--main_end--*/
+
+/*--rolam--*/
+	h1{
+		padding-right: 10rem;
+		padding-left: 10rem;
+		max-width: 100%;
+		text-align: left;
+
+	}
+
+	.bemutatkozas p{
+		text-align: left;
+		margin-left: 10rem;
+		margin-right: 20rem;
+	}
+
+	.kep{
+		text-align: left;
+		height: 25rem;
+		margin-left: 10rem;
+		margin-right: 10rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+/*--rolam_end--*/
+
+/*--munkaim--*/
+	.kepek_racs{
+		display: grid;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+	.kepek_racs .kepek{
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+	.kepek .kep{
+		height: 10rem;
+		text-align: center;
+	}
+	.kepek .kep img{
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+	.kepek .kep img:hover{
+		-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 11px -9px 13px 16px rgba(0,0,0,0.34); 
+		box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 11px -9px 13px 16px rgba(0,0,0,0.34);
+		-moz-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 11px -9px 13px 16px rgba(0,0,0,0.34);
+	}
+	.kepek p{
+			font-size:  2rem;
+			padding-top: .5rem;
+	}
+/*--munkaim_end--*/
+
+/*--egyeb--*/
+	h1{
+		padding-right: 10rem;
+		padding-left: 10rem;
+		max-width: 100%;
+		text-align: left;
+
+	}
+
+	.szoveg p{
+		text-align: left;
+		margin-left: 0rem;
+		margin-right: 0rem;
+
+	}
+
+	.oldal{
+		text-align: left;
+		height: 20rem;
+		margin-left: 10rem;
+		margin-right: 10rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+	}
+
+	.szoveg2 p{
+		text-align: left;
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}
+
+	.oldal2{
+		text-align: left;
+		height: 20rem;
+		margin-left: 10rem;
+		margin-right: 10rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.szoveg3 p{
+		text-align: left;
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}
+
+	.oldal3{
+		text-align: left;
+		height: 20rem;
+		margin-left: 10rem;
+		margin-right: 10rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+/*--egyeb_end--*/
